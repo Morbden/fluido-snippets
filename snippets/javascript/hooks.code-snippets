@@ -1,0 +1,15 @@
+{
+  "Fluido - Hooks `javascript`": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "flhk",
+    "body": [
+      "import { createState, useState } from '@hookstate/core'",
+      "",
+      "const ${TM_FILENAME_BASE/.*/${0:/pascalcase}/}State = createState(${2:null})",
+      "",
+      "const use${TM_FILENAME_BASE/.*/${0:/pascalcase}/} = () => useState(${TM_FILENAME_BASE/.*/${0:/pascalcase}/}State)",
+      "",
+      "export default use${TM_FILENAME_BASE/.*/${0:/pascalcase}/}"
+    ]
+  }
+}

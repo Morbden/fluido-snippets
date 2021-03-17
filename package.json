@@ -12,24 +12,44 @@
   "contributes": {
     "snippets": [
       {
-        "language": "javascript,typescript",
-        "path": "./snippets/api.code-snippets"
+        "language": "typescript",
+        "path": "./snippets/typescript/api.code-snippets"
       },
       {
-        "language": "javascript,typescript,javascriptreact,typescriptreact",
-        "path": "./snippets/hooks.code-snippets"
+        "language": "typescript",
+        "path": "./snippets/typescript/hooks.code-snippets"
       },
       {
-        "language": "javascript,typescript",
-        "path": "./snippets/models.code-snippets"
+        "language": "typescript",
+        "path": "./snippets/typescript/models.code-snippets"
       },
       {
-        "language": "javascriptreact,typescriptreact",
-        "path": "./snippets/next.code-snippets"
+        "language": "typescriptreact",
+        "path": "./snippets/typescript/next.code-snippets"
       },
       {
-        "language": "javascriptreact,typescriptreact",
-        "path": "./snippets/rect.code-snippets"
+        "language": "typescriptreact",
+        "path": "./snippets/typescript/rect.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript/api.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript/hooks.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript/models.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript/next.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript/rect.code-snippets"
       }
     ]
   },

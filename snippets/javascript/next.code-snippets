@@ -1,0 +1,56 @@
+{
+  "Fluido - Page `javascript`": {
+    "scope": "javascriptreact",
+    "prefix": "flpg",
+    "body": [
+      "import Head from 'next/head'",
+      "import { useTranslation } from 'react-i18next'",
+      "",
+      "const ${1:${TM_FILENAME_BASE/.*/${0:/pascalcase}/}}Page = () => {",
+      "  const { t } = useTranslation()",
+      "",
+      "  return (",
+      "    <>",
+      "      <Head>",
+      "        <title>",
+      "          {process.env.PROJECT_NAME} - {t('page.${2:${TM_FILENAME_BASE/.*/${0:/camelcase}/}}')}",
+      "        </title>",
+      "      </Head>",
+      "      <h1>${3:${TM_FILENAME_BASE/.*/${0:/pascalcase}/}} Page</h1>",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/.*/${0:/pascalcase}/}}Page"
+    ]
+  },
+
+  "Fluido - Page Static Data `javascript`": {
+    "scope": "javascriptreact",
+    "prefix": "flpgs",
+    "body": [
+      "import Head from 'next/head'",
+      "import { useTranslation } from 'react-i18next'",
+      "import { joinStaticProps } from '@fluido/react-utils'",
+      "",
+      "const ${1:${TM_FILENAME_BASE/.*/${0:/pascalcase}/}}Page = () => {",
+      "  const { t } = useTranslation()",
+      "",
+      "  return (",
+      "    <>",
+      "      <Head>",
+      "        <title>",
+      "          {process.env.PROJECT_NAME} - {t('page.${2:${TM_FILENAME_BASE/.*/${0:/camelcase}/}}')}",
+      "        </title>",
+      "      </Head>",
+      "      <h1>${3:${TM_FILENAME_BASE/.*/${0:/pascalcase}/}} Page</h1>",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/.*/${0:/pascalcase}/}}Page",
+      "",
+      "export const getStaticProps = joinStaticProps()"
+    ]
+  }
+}
