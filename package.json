@@ -2,7 +2,7 @@
   "name": "fluido-snippets",
   "displayName": "fluido-snippets",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -12,8 +12,24 @@
   "contributes": {
     "snippets": [
       {
-        "language": "typescript",
-        "path": "./snippets/snippets.code-snippets"
+        "language": "javascript,typescript",
+        "path": "./snippets/api.code-snippets"
+      },
+      {
+        "language": "javascript,typescript,javascriptreact,typescriptreact",
+        "path": "./snippets/hooks.code-snippets"
+      },
+      {
+        "language": "javascript,typescript",
+        "path": "./snippets/models.code-snippets"
+      },
+      {
+        "language": "javascriptreact,typescriptreact",
+        "path": "./snippets/next.code-snippets"
+      },
+      {
+        "language": "javascriptreact,typescriptreact",
+        "path": "./snippets/rect.code-snippets"
       }
     ]
   },
