@@ -1,0 +1,33 @@
+{
+  "Fluido - Model Schema `typescript`": {
+    "scope": "javascript,typescript",
+    "prefix": "flm",
+    "body": [
+      "import MainDataBase from 'app-server/db-connection'",
+      "import { Document, Model, Schema } from 'mongoose'",
+      "",
+      "interface WithTimestampProps {",
+      "  createdAt?: Date",
+      "  updatedAt?: Date",
+      "}",
+      "",
+      "interface ${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Interface extends Document, WithTimestampProps {}",
+      "",
+      "const MODEL_NAME = '${TM_FILENAME_BASE/.*/${0:/pascalcase}/}'",
+      "const COLLECTION_NAME = '${TM_FILENAME_BASE/.*/${0:/paramcase}/}s'",
+      "",
+      "const get${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Model = () => {",
+      "  const mdb = (await MainDataBase).useDb(process.env.DATABASE_NAME)",
+      "",
+      "  if (MODEL_NAME in mdb.models)",
+      "    return mdb.models[MODEL_NAME] as Model<${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Interface>",
+      "",
+      "  const schema = new Schema<${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Interface>({}, {timestamps: true})",
+      "",
+      "  return mdb.model<${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Interface>(MODEL_NAME, schema, COLLECTION_NAME)",
+      "}",
+      "",
+      "export default get${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Model"
+    ]
+  }
+}
