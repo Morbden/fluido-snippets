@@ -1,6 +1,6 @@
 {
   "Fluido - Model Schema `typescript`": {
-    "scope": "javascript,typescript",
+    "scope": "typescript",
     "prefix": "flm",
     "body": [
       "import MainDataBase from 'app-server/db-connection'",
@@ -25,6 +25,30 @@
       "  const schema = new Schema<${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Interface>({}, {timestamps: true})",
       "",
       "  return mdb.model<${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Interface>(MODEL_NAME, schema, COLLECTION_NAME)",
+      "}",
+      "",
+      "export default get${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Model"
+    ]
+  },
+  "Fluido - Model Schema `javascript`": {
+    "scope": "javascript",
+    "prefix": "flm",
+    "body": [
+      "import MainDataBase from 'app-server/db-connection'",
+      "import { Schema } from 'mongoose'",
+      "",
+      "const MODEL_NAME = '${TM_FILENAME_BASE/.*/${0:/pascalcase}/}'",
+      "const COLLECTION_NAME = '${TM_FILENAME_BASE/.*/${0:/paramcase}/}s'",
+      "",
+      "const get${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Model = () => {",
+      "  const mdb = (await MainDataBase).useDb(process.env.DATABASE_NAME)",
+      "",
+      "  if (MODEL_NAME in mdb.models)",
+      "    return mdb.models[MODEL_NAME]",
+      "",
+      "  const schema = new Schema({}, {timestamps: true})",
+      "",
+      "  return mdb.model(MODEL_NAME, schema, COLLECTION_NAME)",
       "}",
       "",
       "export default get${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Model"
