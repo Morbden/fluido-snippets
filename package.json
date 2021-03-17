@@ -1,0 +1,32 @@
+{
+  "name": "fluido-snippets",
+  "displayName": "fluido-snippets",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "keywords": [
+    "react",
+    "snippet",
+    "fluido",
+    "api",
+    "nextjs",
+    "typescript"
+  ],
+  "author": "Morbden",
+  "email": "ren.gsg@gmail.com",
+  "license": "MIT",
+  "publisher": "fluido"
+}
