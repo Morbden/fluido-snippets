@@ -3,6 +3,10 @@
   "displayName": "fluido-snippets",
   "description": "",
   "version": "0.6.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morbden/fluido-snippets.git"
+  },
   "engines": {
     "vscode": "^1.54.0"
   },
