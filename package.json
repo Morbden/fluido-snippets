@@ -33,7 +33,7 @@
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/javascriptreact/rect.code-snippets"
+        "path": "./snippets/javascriptreact/react.code-snippets"
       },
       {
         "language": "typescript",
@@ -53,7 +53,7 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/typescriptreact/rect.code-snippets"
+        "path": "./snippets/typescriptreact/react.code-snippets"
       }
     ]
   },

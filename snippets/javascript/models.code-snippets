@@ -9,7 +9,7 @@
       "const MODEL_NAME = '${TM_FILENAME_BASE/.*/${0:/pascalcase}/}'",
       "const COLLECTION_NAME = '${TM_FILENAME_BASE/.*/${0:/paramcase}/}s'",
       "",
-      "const get${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Model = () => {",
+      "const get${TM_FILENAME_BASE/.*/${0:/pascalcase}/}Model = async () => {",
       "  const mdb = (await MainDataBase).useDb(process.env.DATABASE_NAME)",
       "",
       "  if (MODEL_NAME in mdb.models)",
