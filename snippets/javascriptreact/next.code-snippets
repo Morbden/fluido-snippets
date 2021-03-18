@@ -1,5 +1,5 @@
 {
-  "Fluido - Page `javascript`": {
+  "Fluido - Page": {
     "scope": "javascriptreact",
     "prefix": "flpg",
     "body": [
@@ -25,7 +25,7 @@
     ]
   },
 
-  "Fluido - Page Static Data `javascript`": {
+  "Fluido - Page Static Data": {
     "scope": "javascriptreact",
     "prefix": "flpgs",
     "body": [

@@ -1,5 +1,5 @@
 {
-  "Fluido - React Component `typescript`": {
+  "Fluido - React Component": {
     "scope": "typescriptreact",
     "prefix": "flc",
     "body": [
@@ -14,7 +14,7 @@
       "export default ${TM_DIRECTORY/^.+[\\\\\\/](.*)$/${1:/pascalcase}/}"
     ]
   },
-  "Fluido - Component with forwardRef `typescript`": {
+  "Fluido - Component with forwardRef": {
     "scope": "typescriptreact",
     "prefix": "flcr",
     "body": [
@@ -31,7 +31,7 @@
       "export default ${TM_DIRECTORY/^.+[\\\\\\/](.*)$/${1:/pascalcase}/}"
     ]
   },
-  "Fluido - Styled Component `typescript`": {
+  "Fluido - Styled Component": {
     "scope": "typescriptreact",
     "prefix": "flsc",
     "body": [
@@ -50,7 +50,7 @@
       "export default ${TM_DIRECTORY/^.+[\\\\\\/](.*)$/${1:/pascalcase}/}"
     ]
   },
-  "Fluido - Styled Component with forwardRef `typescript`": {
+  "Fluido - Styled Component with forwardRef": {
     "scope": "typescriptreact",
     "prefix": "flscr",
     "body": [

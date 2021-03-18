@@ -1,5 +1,5 @@
 {
-  "Fluido - API With Body `javascript`": {
+  "Fluido - API With Body": {
     "scope": "javascript",
     "prefix": "flapb",
     "body": [
@@ -43,7 +43,7 @@
     ]
   },
 
-  "Fluido - API Simple `javascript`": {
+  "Fluido - API Simple": {
     "scope": "javascript",
     "prefix": "flap",
     "body": [

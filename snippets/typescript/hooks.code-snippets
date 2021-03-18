@@ -1,6 +1,6 @@
 {
-  "Fluido - Hooks `typescript`": {
-    "scope": "typescript,typescriptreact",
+  "Fluido - Hooks": {
+    "scope": "typescript",
     "prefix": "flhk",
     "body": [
       "import { createState, useState } from '@hookstate/core'",

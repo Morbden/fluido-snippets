@@ -1,6 +1,6 @@
 {
-  "Fluido - Hooks `javascript`": {
-    "scope": "javascript,javascriptreact",
+  "Fluido - Hooks": {
+    "scope": "javascript",
     "prefix": "flhk",
     "body": [
       "import { createState, useState } from '@hookstate/core'",

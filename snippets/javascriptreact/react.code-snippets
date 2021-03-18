@@ -1,5 +1,5 @@
 {
-  "Fluido - React Component `javascript`": {
+  "Fluido - React Component": {
     "scope": "javascriptreact",
     "prefix": "flc",
     "body": [
@@ -13,7 +13,7 @@
     ]
   },
 
-  "Fluido - Component with forwardRef `javascript`": {
+  "Fluido - Component with forwardRef": {
     "scope": "javascriptreact",
     "prefix": "flcr",
     "body": [
@@ -29,7 +29,7 @@
     ]
   },
 
-  "Fluido - Styled Component `javascript`": {
+  "Fluido - Styled Component": {
     "scope": "javascriptreact",
     "prefix": "flsc",
     "body": [
@@ -47,7 +47,7 @@
     ]
   },
 
-  "Fluido - Styled Component with forwardRef `javascript`": {
+  "Fluido - Styled Component with forwardRef": {
     "scope": "javascriptreact",
     "prefix": "flscr",
     "body": [

@@ -1,5 +1,5 @@
 {
-  "Fluido - Page `typescript`": {
+  "Fluido - Page": {
     "scope": "typescriptreact",
     "prefix": "flpg",
     "body": [
@@ -27,7 +27,7 @@
       "export default ${1:${TM_FILENAME_BASE/.*/${0:/pascalcase}/}}Page"
     ]
   },
-  "Fluido - Page Static Data `typescript`": {
+  "Fluido - Page Static Data": {
     "scope": "typescriptreact",
     "prefix": "flpgs",
     "body": [
